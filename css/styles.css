@@ -1,0 +1,124 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.social-top {
+    height: 50px;
+    background-color: #3c2520;
+    border-bottom: 1px solid #957964;
+}
+.div-one {
+    float: left;
+    width: 50%;
+    padding-top: 13px;
+}
+
+.div-one ul {
+    width: 100%;
+}
+
+.div-two {
+    float: left;
+    width: 50%;
+    padding-top: 9px;
+}
+
+.social-text {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.social-text a {
+    text-decoration: none;
+    color: #999999;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    padding: 3px 6px;
+}
+
+.social-text li a {
+    border-right: 1px solid #999999;
+}
+
+.social-text li:last-child a{
+    border: none;
+}
+
+.social-icons {
+    float: right;
+    width: 44%;
+}
+
+.social-icons li {
+    border-radius: 50%;
+    background-color: #957964;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 21px;
+
+}
+
+.fa {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.social-icons li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons li:hover{
+    background-color: #db4a39;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+}
+
+#logo {
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: #333333;
+    text-decoration: none;
+}
+
+#logo span {
+    font-size: 46px;
+    /*font-weight: bold;*/
+}
+
+.searchBoxDiv {
+    float: right;
+    width: 53%;
+}
+
+.btn-search {
+    background-color: #3c2520;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    height: 32px;
+    float: left;
+    border: none;
+}
+
+.searchBoxDiv input {
+    height: 26px;
+    margin-top: 2px;
+    float: left;
+    margin-right: 1px;
+}
+
+.searchBoxDiv p {
+    margin-bottom: 15px;
+}
