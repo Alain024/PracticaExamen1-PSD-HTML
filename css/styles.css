@@ -2,10 +2,17 @@ body {
     width: 960px;
     margin: 0 auto;
     background-color: #fff;
+    font-family: 'Georgia', serif;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
 }
 
 .social-top {
-    height: 50px;
+    display: block;
+    overflow: hidden;
     background-color: #3c2520;
     border-bottom: 1px solid #957964;
 }
@@ -49,6 +56,7 @@ body {
 .social-icons {
     float: right;
     width: 44%;
+    margin-bottom: 10px;
 }
 
 .social-icons li {
@@ -113,12 +121,237 @@ li a {
 }
 
 .searchBoxDiv input {
-    height: 26px;
-    margin-top: 2px;
+    height: 30px;
     float: left;
     margin-right: 1px;
+    border: 1px solid #dddddd;
+}
+
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #7f7f7f;
+  font-family: 'Georgia', serif;
+  padding-left: 15px;
+  font-size: 12px;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #7f7f7f;
+  font-family: 'Georgia', serif;
+  padding-left: 15px;
+  font-size: 12px;
+}
+input::-ms-input-placeholder { /* IE 10+ */
+  color: #7f7f7f;
+  font-family: 'Georgia', serif;
+  padding-left: 15px;
+  font-size: 12px;
+}
+input::-moz-placeholder { /* Firefox 18- */
+  color: #7f7f7f;
+  font-family: 'Georgia', serif;
+  padding-left: 15px;
+  font-size: 12px;
 }
 
 .searchBoxDiv p {
     margin-bottom: 15px;
+    margin-left: 17px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.div-left {
+    display: block;
+    overflow: hidden;
+    width: 57%;
+    margin-top: 20px;
+}
+
+.div-right {
+    display: block;
+    overflow: hidden;
+    width: 42%;
+    margin-top: 37px;
+}
+
+.div-right div:nth-child(1) {
+    width: 45%;
+    border: 1px solid #e4e4e4;
+    height: 305px;
+}
+
+
+.div-right div:nth-child(2) {
+    width: 45%;
+    background-color: #957964;
+    height: 305px;
+}
+
+header {
+    display: block;
+    overflow: hidden;
+}
+
+#logo p {
+    margin-bottom: 37px;
+}
+
+nav {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 37px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    height: 65px;
+    list-style-type: none;
+    background-color: #3c2520;
+}
+nav ul li a {
+    color: #fff;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 27px 20px;
+}
+
+nav ul li:first-child {
+    border-radius: 5px 0px 0px 5px;
+} 
+
+nav ul li:last-child {
+    border-radius: 0px 5px 5px 0px;  
+}
+
+nav ul li:not(:last-child) {
+    border-right: 2px solid white;
+}
+
+nav ul li:hover {
+    background-color: #957964;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: auto;
+    display: block;
+    overflow: hidden;
+}
+
+main h1 {
+    color: #957964;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+blockquote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 39px;
+    margin-bottom: 35px;
+}
+
+blockquote:before {
+    content:"\201C";
+}
+
+blockquote:after {
+    content:"\201D";
+    transform: translateY(12px);
+    display: inline-block;
+}
+
+.bigImg {
+    float: left;
+    width: 58.2%;
+    border: 2px solid #dddddd;
+    padding: 4px;
+    height: auto;
+}
+
+.sidebar-images {
+    float: right;
+    width: 39%;
+    height: auto;
+}
+
+#yourTitle-1 div:first-child  {
+    display: block;
+    overflow: hidden;
+}
+
+#yourTitle-1 div:nth-child(2)  {
+    display: block;
+    overflow: hidden;
+}
+
+#yourTitle-1 div:nth-child(1) img {
+    border-radius: 50%;
+    margin: 33px 18px 0px 0px;
+}
+
+.text-box-right {
+    width: 60%;
+}
+
+.text-box-right h4 {
+    color: #585b5f;
+    font-family: 'Georgia', serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.text-box-right p {
+    margin-bottom: 15px;
+}
+
+.text-box-right a {
+    color: #957964;
+    font-size: 13px;
+}
+
+#persons-name div {
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 19px;
+}
+
+#persons-name img {
+    margin-top: 20px;
+}
+
+#persons-name h2 {
+    font-size: 32px;
+    /*margin: 16px 38px 25px 39px;*/
+    text-align: center;
+    margin-top: 25px;
+}
+
+#persons-name p {
+    font-size: 12px;
+    color: #979797;
+    width: 76%;
+    margin:0px 32px;
 }
