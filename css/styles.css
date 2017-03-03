@@ -10,8 +10,10 @@ body {
   clear: both;
 }
 
+
 .social-top {
-    display: block;
+    display: block; /* display block, overflow hidden hacen que se adapten al
+    contenido que tenga adentro */
     overflow: hidden;
     background-color: #3c2520;
     border-bottom: 1px solid #957964;
@@ -192,7 +194,7 @@ input::-moz-placeholder { /* Firefox 18- */
 .div-right div:nth-child(3) {
     width: 45%;
     background-color: #957964;
-    height: 305px;
+    height: auto;
 }
 
 header {
@@ -295,7 +297,7 @@ blockquote:after {
 
 .sidebar-images {
     float: right;
-    width: 39%;
+    width: 38%;
     height: auto;
 }
 
@@ -332,7 +334,7 @@ blockquote:after {
     margin-bottom: 15px;
 }
 
-.text-box-right a {
+a {
     color: #957964;
     font-size: 13px;
 }
@@ -340,8 +342,9 @@ blockquote:after {
 #persons-name div {
     margin: 30px auto;
     text-align: center;
-    margin-right: 19px;
-    width: 47.5%;
+    margin-right: 15px;
+    width: 47.9%;
+    border: 1px solid #e4e4e4;
 }
 
 #persons-name div:last-child {
@@ -378,16 +381,92 @@ blockquote:after {
     font-size: 12px;
     color: #979797;
     width: 76%;
-    margin:0px auto;
+    margin:0px auto 20px auto;
 }
 
 #persons-name .white-text {
-  color: #fff;
+    color: #fff;
 }
 
 .personWrapper {
-  position: relative;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 5px solid #dddddd;
+    padding-bottom: 50px;
+}
+
+.pre-footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: #efefef;
+}
+
+.col {
+    width: 33%;
+    float: left;
+    margin-top: 29px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.pre-footer h2 {
+  margin-bottom: 25px;;
+}
+
+.pre-footer h4 {
+  margin-bottom: 4px;
+}
+
+.pre-footer h6 {
+  margin-bottom: 8px;
+}
+
+h6 {
+  font-size: 10px;
+  color: #666666;
+}
+
+
+.pre-footer p {
+  color: #999999;
+  font-size: 13px;;
+  padding-bottom: 17px;
+  width: 90.3%;
+}
+
+.col ul li {
+  float: left;
+  width: 90.3%;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 5px 0px;
+}
+
+.col i {
+  float: left;
+  position: relative; /*Sirve unicamente si no hay un elemento posicionado absolute*/
+  width: 6.5%;
+  top: -3px;
+  left: 0;
+}
+
+#about a {
+  margin-bottom: 30px;
   display: block;
-  overflow: hidden;
-  width: 100%;
+}
+
+footer {
+  height: auto;
+  background-color: #1f1210;
+  border-top: 1px solid #957964;
+  color: #957964;
+}
+
+footer p {
+  padding: 30px 0px;
+  font-size: 12px;
 }
