@@ -169,15 +169,17 @@ input::-moz-placeholder { /* Firefox 18- */
 .div-left {
     display: block;
     overflow: hidden;
-    width: 57%;
+    width: 49.1%;
     margin-top: 20px;
+    border-top: 5px solid #ebebeb;
 }
 
 .div-right {
     display: block;
     overflow: hidden;
-    width: 42%;
-    margin-top: 37px;
+    width: 49%;
+    margin-top: 20px;
+    border-top: 5px solid #ebebeb;
 }
 
 .div-right div:nth-child(1) {
@@ -187,7 +189,7 @@ input::-moz-placeholder { /* Firefox 18- */
 }
 
 
-.div-right div:nth-child(2) {
+.div-right div:nth-child(3) {
     width: 45%;
     background-color: #957964;
     height: 305px;
@@ -228,10 +230,10 @@ nav ul li a {
 
 nav ul li:first-child {
     border-radius: 5px 0px 0px 5px;
-} 
+}
 
 nav ul li:last-child {
-    border-radius: 0px 5px 5px 0px;  
+    border-radius: 0px 5px 5px 0px;
 }
 
 nav ul li:not(:last-child) {
@@ -250,6 +252,7 @@ main {
     width: auto;
     display: block;
     overflow: hidden;
+    position: relative;
 }
 
 main h1 {
@@ -296,14 +299,16 @@ blockquote:after {
     height: auto;
 }
 
-#yourTitle-1 div:first-child  {
+.left-container  {
     display: block;
     overflow: hidden;
+    width: 100%;
 }
 
 #yourTitle-1 div:nth-child(2)  {
     display: block;
     overflow: hidden;
+    font-size: 15px;
 }
 
 #yourTitle-1 div:nth-child(1) img {
@@ -312,7 +317,7 @@ blockquote:after {
 }
 
 .text-box-right {
-    width: 60%;
+    width: 69%;
 }
 
 .text-box-right h4 {
@@ -333,9 +338,14 @@ blockquote:after {
 }
 
 #persons-name div {
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     margin-right: 19px;
+    width: 47.5%;
+}
+
+#persons-name div:last-child {
+      margin-right: 0px;
 }
 
 #persons-name img {
@@ -344,14 +354,40 @@ blockquote:after {
 
 #persons-name h2 {
     font-size: 32px;
-    /*margin: 16px 38px 25px 39px;*/
+    margin: 16px auto 25px auto;
     text-align: center;
-    margin-top: 25px;
 }
+
+#yourTitle-1 h3 {
+    background-color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 17%;
+}
+
+ #persons-name h3 {
+    background-color: #fff;
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    left: 67%;
+    width: 145px;
+ }
 
 #persons-name p {
     font-size: 12px;
     color: #979797;
     width: 76%;
-    margin:0px 32px;
+    margin:0px auto;
+}
+
+#persons-name .white-text {
+  color: #fff;
+}
+
+.personWrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
 }
